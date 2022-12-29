@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>Escanea tu ficha</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+  <link href="plugin/bootstrap.min.css" rel="stylesheet">
+  <link href="plugin/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <script src="plugin/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/llqrcode.js"></script>
+  <script type="text/javascript" src="js/webqr1.js"></script>
+   <!-- Custom styles for this template -->
+  <link href="css/sign-in.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/videostyle.css" rel="stylesheet" />
+
+  
+
+</head>
+<header class="main-header">
+  <div class="main-header">
+    <img src="img\logo-light.svg" title="" alt="">
+    <p style="margin-bottom: 0px;">FICHAS WIFI YOSA</p>
+  </div>
+</header>
+<body class="text-center">
+  <main class="form-signin w-100 m-auto">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button onclick="history.go(-1)"class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="false">Ficha</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-qr-tab" data-bs-toggle="pill" data-bs-target="#pills-qr" type="button"
+          role="tab" aria-controls="pills-qr" aria-selected="true">QR</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button onclick="history.go(-1)" class="nav-link" id="pills-precios-tab" data-bs-toggle="pill" data-bs-target="#pills-precios"
+          type="button" role="tab" aria-controls="pills-precios" aria-selected="false">Precios</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button  onclick="history.go(-1)" class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#pills-contacto"
+          type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+
+      <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+      </div>
+
+
+      <div class="tab-pane fade show active" id="pills-qr" role="tabpanel" aria-labelledby="pills-qr-tab" tabindex="0">
+        
+      <div class="card border-dark mb-3">
+          <div class="card-header"><h5 class="card-title"> <i class="bi-qr-code-scan"></i> Escanea tu ficha para conectarte a internet</h5>
+            </div>
+          <div class="card-body">
+            <center>
+              <div id="main">
+                <div class="qr-scanner"id="mainbody" style="display: inline;">
+                  
+                  <div class="camera" id="outdiv" >
+                    <video id="v" autoplay=""></video>
+                  </div>
+                  
+                  <div class="box">
+                        <div class="line"></div>
+                        
+                        <div class="angle"></div>
+                  </div>
+                  
+                  
+                    <div class="col2">
+                      <div class="col-md-8" style="top: 14px ;">
+                        <div class="btn btn-primary" id="reload" onclick="location.reload();">
+                          <i class="bi bi-camera-fill">  </i> Cambiar camara
+                        </div>
+                      </div>
+    
+                    </div>
+                </div>
+              </div>
+            </center>
+          </div>
+      </div>
+        
+
+    <canvas  style="display: none; width:800 px; height: 600px;" id="qr-canvas" width="800" height="600"></canvas>
+    <script type="text/javascript">load();</script>
+  
+
+      </div>
+
+      <div class="tab-pane fade" id="pills-precios" role="tabpanel" aria-labelledby="pills-precios-tab" tabindex="0">
+      </div>
+
+      <div class="tab-pane fade" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contacto-tab" tabindex="0">
+      </div>
+
+    </div>
+
+  </main>
+</body>
+<footer>©Wifi San juan del rio</footer>
+
+</html>
